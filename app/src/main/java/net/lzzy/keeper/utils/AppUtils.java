@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 /**
- * @author Administrator
+ * @author lzzy_gxy
  */
 public class AppUtils extends Application {
     private static Context context;
