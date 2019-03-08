@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/clazz_selector"
+    android:padding="3dp"
+    android:minHeight="120dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView android:id="@+id/class_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/listMargin"
+            android:src="@drawable/arsenal"/>
+        <TextView android:id="@+id/class_item_tv_count"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/layoutMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="34人"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/holo_blue_dark"/>
+    <TextView android:id="@+id/class_item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        tools:text="2017级移动应用开发1班"/>
+</LinearLayout>

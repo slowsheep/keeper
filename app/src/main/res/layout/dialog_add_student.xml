@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layoutMargin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        style="@style/GridTitle"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/listMargin"
+        android:text="学生信息"/>
+    <RelativeLayout android:id="@+id/dialog_add_student_layout_area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color2"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="选择籍贯"
+            android:textColor="@color/color4"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dialog_add_student_tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingEnd="15dp"
+            android:textColor="@color/color5"
+            android:textSize="15sp"
+            android:text="广西柳州市鱼峰区"/>
+    </RelativeLayout>
+    <EditText android:id="@+id/dialog_add_student_edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"/>
+    <EditText android:id="@+id/dialog_add_student_edt_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="请输入分数"/>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="请选择性别："
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup android:id="@+id/dialog_add_student_rg_gender"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/dialog_add_student_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男"/>
+            <RadioButton android:id="@+id/dialog_add_student_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

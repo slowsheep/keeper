@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layoutMargin">
+    <TextView android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        style="@style/GridTitle"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/listMargin"
+        android:text="添加班级"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/dialog_add_class_edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入班级名称"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/dialog_add_class_edt_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:gravity="top|start"
+            android:hint="请输入班级简介"/>
+    </android.support.design.widget.TextInputLayout>
+    <ImageView android:id="@+id/dialog_add_class_img"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:contentDescription="点击切换"
+        android:src="@drawable/arsenal"/>
+</LinearLayout>

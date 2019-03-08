@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/layoutMargin"
+    android:padding="@dimen/layoutMargin"
+    android:background="@drawable/bg_draw15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/layout_class_img"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/arsenal"/>
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/listMargin"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/layout_class_tv_name"
+            style="@style/ListHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="2017软件开发"/>
+        <TextView android:id="@+id/layout_class_tv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="7"
+            android:ellipsize="end"
+            tools:text="接口方法getI接口方法needUpdate指示是否需要更新该业务模型类映射的表的架构（默认false无需更新），若应用发布后业务模型类映射的表结构发生了变化，则该方dentityValue返回标识字段的值，用于根据id删除以及根据id查询（只要继承了BaseEntity标识字段就是id，因此可移到BaseEntity，这样更省事）"/>
+    </LinearLayout>
+</LinearLayout>
